@@ -1,54 +1,141 @@
 {
   "items": [
     {
-      "category": "Redundancy",
+      "category": "Operations Management",
       "subcategory": "Platform Version",
       "text": "Leverage a storagev2 account type for better performance and reliability",
       "waf": "Reliability",
       "guid": "cb8eb8c0-aa62-4a25-a495-6eaa8dc4a243",
-      "id": "49.1.1",
-      "severity": "Medium",
+      "id": "49.1",
+      "severity": "High",
       "link": "https://learn.microsoft.com/azure/storage/common/storage-account-upgrade?tabs=azure-portal"
     },
     {
-      "category": "Redundancy",
+      "category": "Operations Management",
       "subcategory": "Availablity",
       "text": "Leverage GRS, ZRS or GZRS storage for the highest availability",
       "waf": "Reliability",
       "guid": "e05bbe20-9d49-4fda-9777-8424d116785c",
-      "id": "49.1.2",
-      "severity": "Medium",
+      "id": "49.2",
+      "severity": "High",
       "link": "https://learn.microsoft.com/azure/storage/common/storage-redundancy"
     },
     {
-      "category": "Redundancy",
+      "category": "Operations Management",
       "subcategory": "Failover",
-      "text": "Customer-Managed Failover",
+      "text": "For write operation after failover, use customer-Managed Failover ",
       "waf": "Reliability",
       "guid": "2fa56c56-ad48-4408-be72-734c486ba280",
-      "id": "49.1.3",
+      "id": "49.3",
       "severity": "Medium",
       "link": "https://learn.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance"
     },
     {
-      "category": "Redundancy",
+      "category": "Operations Management",
       "subcategory": "Failover",
-      "text": "Microsoft-Managed Failover",
+      "text": "Understand Microsoft-Managed Failover details",
       "waf": "Reliability",
       "guid": "dc0590cf-65de-48e1-909c-cbd579266bcc",
-      "id": "49.1.4",
+      "id": "49.4",
       "severity": "Medium",
       "link": "https://learn.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance#microsoft-managed-failover"
     },
     {
-      "category": "Retention",
+      "category": "Operations Management",
       "subcategory": "Data Protection",
       "text": "Enable Soft Delete",
       "waf": "Reliability",
       "guid": "a274faa1-abfe-49d5-9d04-c3c4919cb1b3",
-      "id": "49.1.5",
+      "id": "49.5",
       "severity": "Medium",
       "link": "https://learn.microsoft.com/azure/storage/blobs/soft-delete-blob-enable?tabs=azure-portal"
     }
-  ]
+  ],
+  "categories": [
+    {
+      "name": "Identity and Access Management"
+    },
+    {
+      "name": "Network Topology and Connectivity"
+    },
+    {
+      "name": "BC and DR"
+    },
+    {
+      "name": "Governance and Security"
+    },
+    {
+      "name": "Cost Governance"
+    },
+    {
+      "name": "Operations Management"
+    },
+    {
+      "name": "Application Deployment"
+    }
+  ],
+  "waf": [
+    {
+      "name": "Reliability"
+    },
+    {
+      "name": "Security"
+    },
+    {
+      "name": "Cost"
+    },
+    {
+      "name": "Operations"
+    },
+    {
+      "name": "Performance"
+    }
+  ],
+  "yesno": [
+    {
+      "name": "Yes"
+    },
+    {
+      "name": "No"
+    }
+  ],
+  "status": [
+    {
+      "name": "Not verified",
+      "description": "This check has not been looked at yet"
+    },
+    {
+      "name": "Open",
+      "description": "There is an action item associated to this check"
+    },
+    {
+      "name": "Fulfilled",
+      "description": "This check has been verified, and there are no further action items associated to it"
+    },
+    {
+      "name": "Not required",
+      "description": "Recommendation understood, but not needed by current requirements"
+    },
+    {
+      "name": "N/A",
+      "description": "Not applicable for current design"
+    }
+  ],
+  "severities": [
+    {
+      "name": "High"
+    },
+    {
+      "name": "Medium"
+    },
+    {
+      "name": "Low"
+    }
+  ],
+  "metadata": {
+    "name": "Azure Storage Review Checklist",
+    "state": "Preview",
+    "waf": "Reliability",
+    "timestamp": "April 19, 2024"
+  }
 }
